@@ -22,3 +22,15 @@ Kita bisa mencari web server dengan filter http.host dan juga dengan menyertakan
 ![1b](/Screenshot/1b.png)
 
 Bisa dilihat bagian atas terdapat informasi servernya yakni nginx/1.10.3
+
+## Soal 2
+Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ?
+<br> Untuk menyelesaikan soal ini dapat menggunakan <br>
+<b> Display Filter :  http.request.uri contains "detail" </b>
+
+![2a](/Screenshot/2a.png)
+![2c](/Screenshot/2c.png)
+Setelah di Follow TCP Stream, terdapat informasi yakni detail topik yang dilihat bisa dibuka dengan memasukkan index.php/topik/detailtopik/194 yang berisikan seperti screenshot dibawah ini
+![2b](/Screenshot/2b.png)
+<b> Diatas terlihat bahwa detail topik yang dilihat ishaq adalah "Evaluasi unjuk kerja User Space Filesystem (FUSE)"</b>
+
