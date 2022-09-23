@@ -11,7 +11,7 @@ Pengerjaan soal shift jarkom modul 1 oleh ITA08
 | Brilianti Puspita S.  | `5027201070` |
 
 ## Soal 1
-Sebutkan web server yang digunakan pada "monta.if.its.ac.id"! 
+Sebutkan web server yang digunakan pada "monta.if.its.ac.id"! <br>
 <b> Penyelesaian : </b> <br>
 <b>Jawaban : nginx/1.10.3 <br> </b>
 ```Display Filter : http.host == monta.if.its.ac.id``` <br> 
@@ -24,13 +24,13 @@ Kita bisa mencari web server dengan filter http.host dan juga dengan menyertakan
 Bisa dilihat bagian atas terdapat informasi servernya yakni nginx/1.10.3
 
 ## Soal 2
-Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ?
+Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ? <br>
 <b> Penyelesaian : </b> <br>
 
 ```Display Filter :  http.request.uri contains "detail" ```
 
 ![2a](/Screenshot/2a.png)
-![2c](/Screenshot/2c.png)
+![2c](/Screenshot/2c.png) 
 Setelah di Follow TCP Stream, terdapat informasi yakni detail topik yang dilihat bisa dibuka dengan memasukkan index.php/topik/detailtopik/194 yang berisikan seperti screenshot dibawah ini
 ![2b](/Screenshot/2b.png)
 <b> Diatas terlihat bahwa detail topik yang dilihat ishaq adalah "Evaluasi unjuk kerja User Space Filesystem (FUSE)"</b>
@@ -82,11 +82,11 @@ Untuk soal ini ditemukan 3 buah percakapan yang masing masing berada pada <br>
 
 ``` Display Filter :  tcp.stream eq 12``` <br>
 ![8a](/Screenshot/8a.png)
-
+<br>
 ``` Display Filter : tcp.stream eq 41 ``` <br>
 ![8b](/Screenshot/8b.png)
-
-``` Display Filter :  tcp.stream eq 90 ```
+<br>
+``` Display Filter :  tcp.stream eq 90 ``` <br>
 ![8c](/Screenshot/8c.png)
 
 ## Soal 9
