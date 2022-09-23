@@ -12,7 +12,7 @@ Pengerjaan soal shift jarkom modul 1 oleh ITA08
 
 ## Soal 1
 Sebutkan web server yang digunakan pada "monta.if.its.ac.id"! 
-
+<b> Penyelesaian : </b> <br>
 <b>Jawaban : nginx/1.10.3 <br> </b>
 ```Display Filter : http.host == monta.if.its.ac.id``` <br> 
 
@@ -25,6 +25,7 @@ Bisa dilihat bagian atas terdapat informasi servernya yakni nginx/1.10.3
 
 ## Soal 2
 Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ?
+<b> Penyelesaian : </b> <br>
 
 ```Display Filter :  http.request.uri contains "detail" ```
 
@@ -36,24 +37,29 @@ Setelah di Follow TCP Stream, terdapat informasi yakni detail topik yang dilihat
 
 ## Soal 3
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 80! <br>
+<b> Penyelesaian : </b> <br>
 ```Display Filter :  tcp.dstport == 80```
 
 ![3](/Screenshot/3.png)
 
 ## Soal 4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21! <br>
+<b> Penyelesaian : </b> <br>
 ``` Display Filter :  tcp.srcport == 21 ```
 
 ![4](/Screenshot/4.png)
 
 ## Soal 5
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443! <br>
+<b> Penyelesaian : </b> <br>
+
 ``` Display Filter :  tcp.srcport == 443 ```
 
 ![5](/Screenshot/5.png)
 
 ## Soal 6
 Filter sehingga wireshark hanya menampilkan paket yang menuju ke lipi.go.id <br>
+<b> Penyelesaian : </b> <br>
 ``` Display Filter :  http.host == lipi.go.id ```
 
 ![6a](/Screenshot/6a.png)
@@ -62,6 +68,7 @@ Saat di Follow TCP Stream maka akan terlihat benar host yang dituju adalah "lipi
 
 ## Soal 7
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian! <br>
+<b> Penyelesaian : </b> <br>
 
 ``` Display Filter :  ip.src == ip ``` <br> Untuk IP masukkan IP sesuai dengan IP kalian, caranya bisa dengan membuka command prompt dan ketik ipconfig
 
@@ -70,7 +77,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian! <br
 
 ## Soal 8
 Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna berupa percakapan antara dua mahasiswa terkait tindakan kecurangan pada kegiatan praktikum. Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi dalam pertukaran datanya sehingga kalian perlu menerapkan filter dengan protokol yang tersebut.
-<br>
+<br> <b> Penyelesaian : </b> <br>
 Untuk soal ini ditemukan 3 buah percakapan yang masing masing berada pada <br> 
 
 ``` Display Filter :  tcp.stream eq 12``` <br>
@@ -96,9 +103,10 @@ Berikut adalah command openssl nya :
 ![9c](/Screenshot/9c.png)
 
 ## Soal 10
-Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!
+Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas! <br>
+<b> Penyelesaian : </b> <br>
 Dari hasil decrypt diatas ditemukan sebuah flag seperti screenshot dibawah ini pada flag.txt
-![9d](/Screenshot/9d.png)
+![9d](/Screenshot/9d.jpg)
 
 
 
