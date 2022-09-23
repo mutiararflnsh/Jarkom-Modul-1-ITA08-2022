@@ -26,7 +26,6 @@ Bisa dilihat bagian atas terdapat informasi servernya yakni nginx/1.10.3
 ## Soal 2
 Ishaq sedang bingung mencari topik ta untuk semester ini , lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq ? <br>
 <b> Penyelesaian : </b> <br>
-
 ```Display Filter :  http.request.uri contains "detail" ```
 
 ![2a](/Screenshot/2a.png)
@@ -52,7 +51,6 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21! <br>
 ## Soal 5
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443! <br>
 <b> Penyelesaian : </b> <br>
-
 ``` Display Filter :  tcp.srcport == 443 ```
 
 ![5](/Screenshot/5.png)
@@ -69,7 +67,6 @@ Saat di Follow TCP Stream maka akan terlihat benar host yang dituju adalah "lipi
 ## Soal 7
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian! <br>
 <b> Penyelesaian : </b> <br>
-
 ``` Display Filter :  ip.src == ip ``` <br> Untuk IP masukkan IP sesuai dengan IP kalian, caranya bisa dengan membuka command prompt dan ketik ipconfig
 
 ![7a](/Screenshot/7a.png)
